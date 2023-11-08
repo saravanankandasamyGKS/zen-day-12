@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Booking</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .image-placeholder {
+      background-color: #ddd;
+      width: 100%;
+      height: 200px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+    .form-section {
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container my-5">
+    <h2 class="text-center mb-4">EVENT 1</h2>
+    <p class="text-center mb-4">Number of available seats: 23</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="image-placeholder">IMAGE</div>
+      </div>
+      <div class="col-md-8">
+        <form>
+          <div class="form-group">
+            <label for="nameInput">Name:</label>
+            <input type="text" class="form-control" id="nameInput" required>
+          </div>
+          <div class="form-group">
+            <label for="emailInput">Email:</label>
+            <input type="email" class="form-control" id="emailInput" required>
+          </div>
+          <div class="form-group">
+            <label for="phoneInput">Phone No.:</label>
+            <input type="tel" class="form-control" id="phoneInput">
+          </div>
+          <div class="form-group">
+            <label for="seatsInput">Number of seats:</label>
+            <select class="form-control" id="seatsInput">
+              <option>1</option>
+              <option selected>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="attendee2Input">Name of Attendee 2:</label>
+            <input type="text" class="form-control" id="attendee2Input">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-secondary">Cancel</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
